@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       
+
+       function Fibonacci(num){
+
+        let result= [0,1];
+
+           for (let i = 2; i < num; i++){
+           
+           let a = result[result.length-1];
+           let b = result[result.length- 2];
+           
+           let nextNum = a + b;
+           result.push(nextNum);
+           
+       }
+       console.log(result);
+       return result;
+    }
+
+       Fibonacci(50);
+
+ 
+    </script>
+</body>
+</html>
